@@ -7,10 +7,16 @@ Write your code in this editor and press "Run" button to compile and execute it.
 *******************************************************************************/
 
 #include <iostream>
-
+using namespace std;
 int main()
 {
-    std::cout<<"Hello World";
-
-    return 0;
+    int numero, sumas=1, respuesta=0;
+    cin>>numero;
+    for (int i=0; i<numero;i++){
+        respuesta=i+sumas;
+        
+        cout<<i<<"+"<<sumas <<"="<<respuesta<<"\n";
+        sumas++;
+    }
+    cout<< respuesta;
 }
