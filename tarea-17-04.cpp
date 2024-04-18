@@ -79,10 +79,10 @@ void primermenu()
 
 
 void op1men2() {
-	int cordy = 30, cordx = 30;
+	int cordy = 70, cordx = 90;
 	string caracteraro = "¬";
 	gotoxy(cordx, cordy);
-	cout << "hola"<<caracteraro;
+	cout <<caracteraro;
 }
 void op2men2() {
 	cout << "ingrese el nombre de un compañero";
@@ -98,10 +98,10 @@ segundomenu()
 	cout << "Escoge una opción" << endl << "1) ir a las coordenadas 30,30" << endl << "2)saludar a un compañero";
 	cin >> opcmen2;
 	if (opcmen2 == 1) {
-
+	 op1men2();
 	}
 	else if (opcmen2 == 2) {
-
+		op2men2();
 	}
 
 
