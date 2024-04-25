@@ -7,6 +7,15 @@ public class MyProgram extends ConsoleProgram
        Double numdec=1.2,numdec2;
        Boolean varbool= false;
        
+public class MyProgram extends ConsoleProgram
+{
+    public void run()
+    {
+       Integer numen=1, numen2=3,num3;
+       String varstr="variable string", vartr2=" holiii \n", vartr="2",vartr3;
+       Double numdec=1.2,numdec2;
+       Boolean varbool= false;
+       
        System.out.println(varstr+vartr2 );
        System.out.println("suma de enteros "+numen+numen2);
        numdec2=Double.valueOf(numen);
@@ -21,7 +30,7 @@ public class MyProgram extends ConsoleProgram
       
       Integer int5;
       Double doub;
-      
+      String str6;
       doub=3.14;
        int5=Double.valueOf(doub).intValue();
        System.out.println("\n\ndouble a entero "+int5);
@@ -49,5 +58,30 @@ public class MyProgram extends ConsoleProgram
        int5=684;
        doub=Double.valueOf(int5);
        System.out.println("\n\n\nEntero a Double "+doub);
+       
+       doub=3.14;
+       str6=String.valueOf(doub);
+       System.out.println("Los numeros son: "+str6);
+       doub=5.85;
+       str6=String.valueOf(doub);
+       System.out.println(str6);
+        doub=4.49;
+       str6=String.valueOf(doub);
+       System.out.println(str6);
+       doub=2.10;
+       str6=String.valueOf(doub);
+       System.out.println(str6);
+       int5=1945;
+       str6=String.valueOf(int5);
+       System.out.println(str6);
+       int5=2010;
+       str6=String.valueOf(int5);
+       System.out.println(str6);
+       int5=218;
+       str6=String.valueOf(int5);
+       System.out.println(str6);
+       int5=684;
+       str6=String.valueOf(int5);
+       System.out.println(str6);
     }
 }

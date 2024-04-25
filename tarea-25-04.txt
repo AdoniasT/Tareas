@@ -1,0 +1,49 @@
+import java.util.Scanner;
+public class MyProgram extends ConsoleProgram
+{
+    public void run()
+    {
+        Scanner entrada=new Scanner (System.in);
+        Scanner entradastr=new Scanner (System.in);
+        System.out.println("ingrese los años que tiene de experiencia");
+        Double exp=entrada.nextDouble();
+        if(exp>=1 && exp<=5){
+            System.out.println("Es principante ");
+            }else if(exp>5 && exp<=10){
+            System.out.println("Es intermedio ");
+            }else if(exp>10){
+            System.out.println("Es experto ");
+            }
+            
+        System.out.println("ingrese un numero para ver si es par o impar");    
+        Double num=entrada.nextDouble();
+        if(num%2==0){
+            System.out.println("El numero es par");
+            }else{
+            System.out.println("El numero es impar");    
+            }
+            
+        System.out.print("\nIngresa una vocal: ");
+        String voc = entradastr.nextLine();
+        if(voc.equals("a")){
+            System.out.println("albahaca");
+            }else if(voc.equals("e")){
+                System.out.println("elefante");
+            }else if(voc.equals("i")){
+                System.out.println("instante");
+            }else if(voc.equals("o")){
+                System.out.println("ovalo");
+            }else if(voc.equals("u")){
+                System.out.println("uber");
+            }
+            
+        System.out.println("Ingrese un año para verificar si es viciesto o no");
+        Integer año=entrada.nextInt();
+        if(año%4==0 && año%100!=0 && año%4==0){
+        System.out.println("\n el año "+año+" es bisiesto");
+        }else{
+        System.out.println("\n el año no es bisiesto");
+        }
+        
+    }
+}   
