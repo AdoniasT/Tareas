@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class MyProgram
+
+{
+    public static void main(String[] args)
+    {
+        Scanner ingrese=new Scanner(System.in);
+        
+        System.out.println("Escriba si o no");
+        
+        String respues;
+        respues=ingrese.nextLine();
+        if(respues=="si"){
+            System.out.println("Bienvenido");
+            }else if(respues=="no"){
+                System.out.println("Adios");
+                }else{
+                    System.out.println("Error "+respues);
+                    }
+    }
+}

@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class MyProgram
+
+{
+    public static void main(String[] args)
+    {
+        Scanner ingrese=new Scanner(System.in);
+        System.out.println("Ingrese un numero para mostrar sus primeros 10 multiplos");
+        int numeroing=ingrese.nextInt();
+        int res;
+        for(int i=1;i<=10;i++){
+            res=numeroing*i;
+            System.out.println("Los multiplos son "+ numeroing+" * "+i+" = "+res);
+            }
+    }
+}
