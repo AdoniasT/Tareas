@@ -1,0 +1,64 @@
+package ejercicio1;
+import java.util.Scanner;
+
+public class Ejercicio1 {
+
+    public static void main(String[] args) {
+        int i=0;
+		Scanner opciones = new Scanner(System.in);
+		Scanner ingrese=new Scanner(System.in);
+		
+		do{
+		    switch(i){
+		    
+		    case 1:
+                System.out.println("Ingrese un numero para mostrar sus primeros 10 multiplos");
+                int numeroing=ingrese.nextInt();
+                int res;
+                for(int i2=1;i2<=10;i2++){
+                    res=numeroing*i2;
+                    System.out.println("Los multiplos son "+ numeroing+" * "+i+" = "+res);
+                }
+		    i=0;
+		    break;
+		    case 2:
+        
+                System.out.println("Escriba si o no");
+        
+                
+                String respuesta;
+                respuesta= ingrese.nextLine();
+                
+                if(respuesta.equals("si") || respuesta.equals("Si")){
+                    System.out.println("Bienvenido");
+                }else if(respuesta.equals("no") || respuesta.equals("No")){
+                    System.out.println("Adios");
+                }else{
+                    System.out.println("Error "+respuesta);
+                }
+		    i=0;
+		    break;
+		    case 3:
+		        System.out.println("Ingrese dos angulos");
+		        Scanner entrada= new Scanner(System.in);
+		        int primerangulo=entrada.nextInt();
+		        int segundoangulo=entrada.nextInt();
+		        int angulofaltante=180-primerangulo-segundoangulo;
+		        System.out.println("El angulo falntante es: "+angulofaltante);
+		    i=0;
+		    break;
+		    
+		    default:
+		    System.out.print("Escoja una opción \n 1)ejercicio No.1   \n 2)ejercicio No.2  \n 3)ejercicio No.3 \n 4)Sallir \n >");
+		    i=opciones.nextInt();
+		    
+		    }
+		    
+		    
+		}while(i<=3);
+		
+		
+	
+    }
+    
+}
